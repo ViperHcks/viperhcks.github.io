@@ -106,3 +106,6 @@ ul li a:hover {
     -ms-transition: 1s ease;
     -o-transition: 1s ease;
 }
+.sub-menu{
+    display:none;
+}
