@@ -15,18 +15,28 @@ header {
     background-position: center;
 }
 
-ul {
+.menu-bar ul {
     float: right;
-    list-style-type: none;
-    margin-top: 30px;
+    list-style: none;
+    padding-top: 15px;
 }
 
-ul li {
-    display: inline-flex;
+.menu-bar ul ul {
+    display: none;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    text-align: right;
+    display: inline-block;
     margin-top: 10px;
 }
 
-ul li a {
+.menu-bar ul li:hover>ul {
+    display: block;
+}
+
+.menu-bar ul li a {
     text-decoration: none;
     color: var(--primary-color);
     padding: 5px 20px;
@@ -43,15 +53,15 @@ ul li a {
     -o-border-radius: 30px;
 }
 
-ul li a:hover {
+.menu-bar ul li a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 .logo img {
     float: left;
-    width: 150px;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .main {
@@ -68,6 +78,7 @@ ul li a:hover {
     flex: 1;
     float: right;
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .body-pic {
@@ -105,7 +116,4 @@ ul li a:hover {
     -moz-transition: 1s ease;
     -ms-transition: 1s ease;
     -o-transition: 1s ease;
-}
-.sub-menu{
-    display:none;
 }
