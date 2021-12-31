@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invincible Rangers Crew</title>
+
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+    <body>
+        <!--header section start-->
+
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">HOME</a>
+                <a href="#home">ABOUT</a>
+                <a href="#home">TEAMS</a>
+                <a href="#home">ACHIEVEMENTS</a>
+                <a href="#home">CONTACT</a>
+            </nav>
+            
+            <div class="icons">
+                <div class="fas fa-search" id="search"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Search here..">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+        </header>
+
+        <!--header section end-->
+
+        <!--contact section start-->
+
+        <section class="contact" id="contact">
+            <h1 class="heading"> <span>contact</span> us </h1>
+            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                <script type="text/javascript">
+                function ValidateForm(frm) {
+                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                return true; }
+                </script>
+                <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                <tr> <td>
+                <label for="Name">Name*:</label>
+                </td> <td>
+                <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="PhoneNumber">Phone number:</label>
+                </td> <td>
+                <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="FromEmailAddress">Email address*:</label>
+                </td> <td>
+                <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                </td> </tr> <tr> <td>
+                <label for="Comments">Enter Details*:</label>
+                </td> <td>
+                <textarea name="Comments" rows="10" cols="40" style="width:100%;max-width:350px;"></textarea>
+                </td> </tr> <tr> <td>
+                * - required fields
+                </td> <td>
+                
+                <input name="skip_Submit" type="submit" value="Submit" />
+                <script src="gsudipto2000@gmail.com" type="text/javascript"></script>
+                </td> </tr>
+                </table>
+                </form>
+                
+        </section>
+
+        <!--contact section end-->
+
+        <!-- footer section strat -->
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+        
+            <div class="links">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="credit">created by <span>Rivu</span> | all rights reserved</div>
+        </section>
+        <!--footer section end-->
+
+
+
+
+
+
+
+
+        <!--js file link-->
+        <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
