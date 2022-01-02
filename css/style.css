@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root{
     --main-color: #d3ad7f;
@@ -9,7 +9,7 @@
 
 
 *{
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing:  border-box;
@@ -25,7 +25,7 @@
 }
 
 html{
-    font-size: 70%;
+    font-size: 63%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
@@ -53,19 +53,23 @@ body{
 }
 
 .header{
-    background: var(--bg);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 8%;
-    border-bottom: var(--border);
+    padding: 0.2%;
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 500;
+    z-index: 1000;
 }
 
 .header .logo img{
-    height: 7rem;
+    left: 0.1rem;
+    height: 9rem;
+}
+
+.header .logo img:hover{
+    color:var(--main-color);
 }
 
 .header .navbar a{
@@ -97,10 +101,10 @@ body{
 
 .header .search-form{
     position: absolute;
-    top: 115%;
+    top: 99%;
     right: 7%;
     background: #fff;
-    width: 50rem;
+    width: 25rem;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -112,6 +116,14 @@ body{
     transform-origin: top;
 }
 
+.header .search-form.active{
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -121,9 +133,8 @@ body{
 }
 
 .header .search-form label{
-    cursor: pointer;
     font-size: 2.5rem;
-    margin-right: 1.9rem;
+    margin-right: 0.1rem;
     color: var(--black);
 }
 
@@ -131,16 +142,87 @@ body{
     color:var(--main-color);
 }
 
-.footer{
-    background: var(--black);
+.home{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: change 16s  ease-in-out infinite;
+    -webkit-animation: change 16s  ease-in-out infinite;
+}
+
+.outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
+.wel{
+    background-blend-mode: multiply;
+    position: relative;
+    text-align: center;
+    top: 35%;
+    transform: -50% -50%;
+    -webkit-transform: -50% -50%;
+    -moz-transform: -50% -50%;
+    -ms-transform: -50% -50%;
+    -o-transform: -50% -50%;
+   
+}
+
+.wel .w{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.wel .i{
+    font-size: 9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.wel .r{
+    font-size: 9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@keyframes change{
+    0%,100%{
+        background-image: url(../images/img.jpg);
+    }
+    25%{
+        background-image: url(../images/messikick.jpg);
+    }
+    50%{
+        background-image: url(../images/img1.jpg);
+    }
+    75%{
+        background-image: url(../images/img2.jpg);
+    }
+    
+}
+
+.social{
     text-align: center;
 }
 
-.footer .share{
+.share{
+    position: relative;
     padding: 1rem 0;
 }
 
-.footer .share a{
+.share a{
     height: 4rem;
     width: 4rem;
     line-height: 4rem;
@@ -155,32 +237,17 @@ body{
     -o-border-radius: 40%;
 }
 
-.footer .share a:hover{
+.share a:hover{
     color: var(--main-color);
 }
 
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    gap: 1rem;
-}
-
-.footer .links a{
-    padding: .8rem 2rem;
-    color: #fff;
-    border: var(--border);
-    font-size: 1.5rem;
-}
-
-.footer .links a:hover{
-    background: var(--main-color);
-
+.footer{
+    background: var(--black);
+    text-align: center;
 }
 
 .footer .credit{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     font-weight: lighter;
     padding: 2rem;
