@@ -53,12 +53,15 @@ body{
 }
 
 .header{
-    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.2%;
-    position: relative;
+    
     top: 0; left: 0px; right: 100px;
     z-index: 1000;
 }
@@ -300,12 +303,17 @@ body{
         display: inline-block;
     }
 
+    .header .icons #search-btn{
+        transform: translateX(0px);
+    }
+
     .header .navbar{
         position: absolute;
+        text-align: center;
         top:100%; right: -100%;
         background: #fff;
         width: 30rem;
-        height: calc(100vh - 9.5rem);
+        height: calc(100vh - 10rem);
     }
 
     .header .navbar.active{
