@@ -311,14 +311,8 @@ body{
         position: absolute;
         text-align: center;
         top:100%; right: -100%;
-        background: #fff;
         background: linear-gradient(-135deg, #c850c0, #4158d0);
-
-
-
-clip-path: circle(25px at calc(100% - 45px) 45px);
-
-
+        clip-path: circle(25px at calc(100% - 45px) 45px);
         width: 30rem;
         height: calc(100vh - 10rem);
     }
