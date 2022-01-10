@@ -61,7 +61,6 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0.2%;
-    
     top: 0; left: 0px; right: 0px;
     z-index: 1000;
 }
@@ -101,7 +100,6 @@ body{
 
 #menu-btn{
     display: none;
-    clip-path: circle(25px at calc(100% - 45px) 45px);
 }
 
 .header .search-form{
@@ -313,9 +311,8 @@ body{
         text-align: center;
         top:100%; right: -100%;
         background: linear-gradient(-135deg, #c850c0, #4158d0);
-        clip-path: circle(25px at calc(100% - 45px) 45px);
         width: 30rem;
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 9.5rem);
     }
 
     .header .navbar.active{
