@@ -101,6 +101,7 @@ body{
 
 #menu-btn{
     display: none;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
 }
 
 .header .search-form{
