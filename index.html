@@ -51,9 +51,9 @@
 
             <div class="outer">
                 <div class="wel" id="wel">
-                    <h1 class="w">Welcome To</h1>
-                    <h1 class="i">Invincible</h1>
-                    <h1 class="r">Rangers</h1>
+                    <h1 class="w" data-aos="fade-down">Welcome To</h1>
+                    <h1 class="i" data-aos="fade-down">Invincible</h1>
+                    <h1 class="r" data-aos="fade-down">Rangers</h1>
                 </div>
             </div>
 
@@ -148,11 +148,11 @@
         <!-- aos script for animation sliding -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init(
+            AOS.init({
 
 // You can also pass an optional settings object
 // below listed default settings
-{
+
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
@@ -173,7 +173,7 @@
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-}););
+});
         </script>
 
 
