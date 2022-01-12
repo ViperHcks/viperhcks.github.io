@@ -80,9 +80,9 @@ body{
     padding-bottom: .6rem;
 }
 
-.header .icons #search-btn{
+/* .header .icons #search-btn{
     transform: translateX(-100px);
-}
+} */
 
 .header .icons div{
     color: #fff;
@@ -312,9 +312,9 @@ body{
         display: inline-block;
     }
 
-    .header .icons #search-btn{
+/*     .header .icons #search-btn{
         transform: translateX(0px);
-    }
+    } */
 
     .header .navbar{
         position: absolute;
