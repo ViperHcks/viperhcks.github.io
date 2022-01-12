@@ -80,10 +80,6 @@ body{
     padding-bottom: .6rem;
 }
 
-.header .icons #search-btn{
-    transform: translateX(-100px);
-}
-
 .header .icons div{
     color: #fff;
     cursor: pointer;
@@ -213,6 +209,26 @@ body{
     
 }
 
+.about{
+    position: relative;
+    padding: 30px;
+    color: #fff;
+}
+
+.about h2{
+    font-size: 5.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+.about p{
+    font-size: 1.5rem;
+}
+
+
+
 .social{
     text-align: center;
 }
@@ -292,10 +308,6 @@ body{
 
     #menu-btn{
         display: inline-block;
-    }
-
-    .header .icons #search-btn{
-        transform: translateX(0px);
     }
 
     .header .navbar{
