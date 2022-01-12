@@ -53,15 +53,13 @@ body{
 }
 
 .header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.2%;
-    top: 0; left: 0px; right: 0px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
     z-index: 1000;
 }
 
@@ -70,6 +68,9 @@ body{
     height: 9rem;
 }
 
+.header .logo img:hover{
+    color:var(--main-color);
+}
 
 .header .navbar a{
     margin: 0 1rem;
@@ -83,15 +84,11 @@ body{
     padding-bottom: .6rem;
 }
 
-.header .icons #search-btn{
-    transform: translateX(-100px);
-}
-
 .header .icons div{
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .header .icons div:hover{
@@ -152,6 +149,8 @@ body{
     display: flex;
     align-items: center;
     background: url(../images/img.jpg) no-repeat;
+    background-color: rgb(156, 73, 73);
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     animation: change 16s  ease-in-out infinite;
@@ -168,7 +167,6 @@ body{
 }
 
 .wel{
-    background-blend-mode: multiply;
     position: relative;
     text-align: center;
     top: 35%;
@@ -203,6 +201,7 @@ body{
 @keyframes change{
     0%,100%{
         background-image: url(../images/img.jpg);
+       
     }
     25%{
         background-image: url(../images/messikick.jpg);
@@ -214,24 +213,6 @@ body{
         background-image: url(../images/img2.jpg);
     }
     
-}
-
-.about{
-    position: relative;
-    padding: 30px;
-    color: #fff;
-}
-
-.about h2{
-    font-size: 5.9rem;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 5px;
-
-}
-
-.about p{
-    font-size: 1.5rem;
 }
 
 .social{
@@ -279,6 +260,19 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries  */
 @media (max-width:991px){
 
@@ -302,13 +296,8 @@ body{
         display: inline-block;
     }
 
-    .header .icons #search-btn{
-        transform: translateX(0px);
-    }
-
     .header .navbar{
         position: absolute;
-        text-align: center;
         top:100%; right: -100%;
         background: #fff;
         width: 30rem;
@@ -353,4 +342,5 @@ body{
     html{
         font-size: 50%;
     }
+
 }
