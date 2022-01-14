@@ -71,13 +71,13 @@ body{
     height: 9rem;
 }
 
-.header .navbar a{
+.navbar a{
     margin: 0 1rem;
     font-size: 2rem;
     color: #fff;
 }
 
-.header .navbar a:hover{
+.navbar a:hover{
     color:var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .6rem;
@@ -319,19 +319,21 @@ body{
         transform: translateX(0px);
     }
 
-    .header .navbar{
+    .navbar{
         position: absolute;
-        top:100%; right: -100%;
+        top: 95px;
+        right: -100%;
         background: #fff;
         width: 30rem;
         height: calc(100vh - 9.5rem);
+        z-index: 1;
     }
 
-    .header .navbar.active{
+    .navbar.active{
         right:0;
     }
 
-    .header .navbar a{
+    .navbar a{
         color:var(--black);
         display: block;
         margin:1.5rem;
