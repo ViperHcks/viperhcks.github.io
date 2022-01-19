@@ -351,11 +351,11 @@ body{
         padding: min(30vh, 15rem) 2.2rem;
         background: hsl(0 0% 0% / .80);
         backdrop-filter: blur(2rem);
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
 }
 
     .header .navbar.active{
