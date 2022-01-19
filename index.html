@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invincible Rangers Crew</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- font link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,29 +21,31 @@
         <!--header section start-->
 
         <header class="header">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="">
-            </a>
+          <a href="index.html" class="logo">
+              <img src="images/logo.png" alt="">
+          </a>
 
-            <nav class="navbar">
-                <a href="#home">HOME</a>
-                <a href="#home">ABOUT</a>
-                <a href="#home">TEAMS</a>
-                <a href="#home">ACHIEVEMENTS</a>
-                <a href="#home">CONTACT</a>
-            </nav>
-            
-            <div class="icons">
-                <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-bars" id="menu-btn"></div>
-            </div>
-
-            <div class="search-form">
+          <nav class="navbar">
+            <ul class="mainmenu" id="mainmenu">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#home">ABOUT</a></li>
+              <li><a href="#home">TEAMS</a></li>
+              <li><a href="#home">ACHIEVEMENTS</a></li>
+              <li><a href="#home">CONTACT</a></li>
+            </ul>
+          </nav>
+          
+          <div class="icons">
+              <!-- <div class="fas fa-search" id="search-btn"></div> -->
+              <div class="fas fa-bars" id="menu-btn"></div>
+          </div>
+          </header>
+        <!-- <div class="search-form">
                 <input type="search" id="search-box" placeholder="Search here..">
                 
             </div>
 
-        </header>
+        </header> -->
 
         <!--header section end-->
 
@@ -52,8 +55,8 @@
             <div class="outer">
                 <div class="wel" id="wel">
                     <h1 class="w" data-aos="fade-down">Welcome To</h1>
-                    <h1 class="i" data-aos="zoom-in-down" data-aos-delay="800" data-aos-duration="1100">Invincible</h1>
-                    <h1 class="r" data-aos="zoom-in-down" data-aos-delay="800" data-aos-duration="1300">Rangers</h1>
+                    <h1 class="i" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000">Invincible</h1>
+                    <h1 class="r" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1000">Rangers</h1>
                 </div>
             </div>
 
@@ -77,51 +80,48 @@
             </div>
 
         </section>
+        <hr>
         
 
         <!-- about section end -->
 
         <!--contact section start-->
 
-        <section class="contact" id="contact">
-            <h1 class="heading"> <span>contact</span> us </h1>
-            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-                <script type="text/javascript">
-                function ValidateForm(frm) {
-                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-                return true; }
-                </script>
-                <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
-                <tr> <td>
-                <label for="Name">Name*:</label>
-                </td> <td>
-                <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="PhoneNumber">Phone number:</label>
-                </td> <td>
-                <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="FromEmailAddress">Email address*:</label>
-                </td> <td>
-                <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
-                </td> </tr> <tr> <td>
-                <label for="Comments">Enter Details*:</label>
-                </td> <td>
-                <textarea name="Comments" rows="10" cols="40" style="width:100%;max-width:350px;"></textarea>
-                </td> </tr> <tr> <td>
-                * - required fields
-                </td> <td>
-                
-                <input name="skip_Submit" type="submit" value="Submit" />
-                <script src="gsudipto2000@gmail.com" type="text/javascript"></script>
-                </td> </tr>
-                </table>
-                </form>
-                
-        </section>
+        <section class="text-gray-600 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                      <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                      <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                      <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
         <section class="social">
 
             <div class="share">
@@ -145,18 +145,24 @@
         <!--js file link-->
         <script src="js/script.js"></script>
 
+
+
+
+        
+
         <!-- aos script for animation sliding -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
-                        offset: 200, // offset (in px) from the original trigger point
-                        delay: 800, // values from 0 to 3000, with step 50ms
-                        duration: 400, // values from 0 to 3000, with step 50ms
+                        offset: 100, // offset (in px) from the original trigger point
+                        delay: 1000, // values from 0 to 3000, with step 50ms
+                        duration: 350, // values from 0 to 3000, with step 50ms
                         easing: 'ease', // default easing for AOS animations
                         once: false, // whether animation should happen only once - while scrolling down
                         mirror: false, // whether elements should animate out while scrolling past them
                         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
                     });
-        </script>
+         </script>           
     </body>
+
 </html>
